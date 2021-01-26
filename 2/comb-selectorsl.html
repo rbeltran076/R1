@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <!--Los selectores son las reglas que voy a escribir fuera de las llaves,
+    y son caracteres que definen qué elementos deberían ser tomados en cuenta
+    para aplicarseles las reglas que se mencionan en las llaves.-->
+    <style>
+        p {
+            font-style: italic;
+            font-size: 15px;      
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-top: 200px;
+            color: rgb(56, 56, 56);
+            text-align: right;
+        }
+
+        p > span{
+            background-color: yellow;
+        }
+
+        .title {
+            font-size: 40px;
+            font-style: Bold;
+            font-family: 'Georgia';
+            color: rgb(5, 5, 83);
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+
+<!--
+Lo que he hecho, es colocar los selectores de: 
+
+Toda etiqueta de párrafo.
+Todo elemento con un id="highlight"
+Todo elemento de class="title"
+
+Ahora, voy a poner esos elementos en el cuerpo, para
+que se puedan ver.
+-->
+</head>
+<body>
+    <h1 class="title">
+        Bienvenidos a una pagina web con el titulo en azul y 
+        en Times new Roman!!
+    </h1>
+    <P>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+        eiusmod <span>Texto cordialmente resaltado</span> tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. <span>Duis aute irure dolor in reprehenderit 
+        n voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span> Excepteur 
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum.&quot;</P>
+
+<!--
+    Lo mejor es que puedo combinarlos para
+    tener selectores más personalizados.
+-->
+</body>
+</html>

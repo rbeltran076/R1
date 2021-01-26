@@ -1,0 +1,64 @@
+h1 {
+    font-style: Normal;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color:rgb(146, 95, 36);
+}
+
+h3 {
+    color: rgb(112, 143, 199);
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+a:link, a:visited{
+    color: white;
+    background-color: rgb(126, 0, 0);
+    text-decoration: none;
+    border: 1px solid gray;
+    text-align: center;
+    width: 100px;
+    margin-bottom: 5px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+a.headerbut{
+    text-align: center;
+    background-color: rgb(34, 58, 139);
+    color: white;
+    margin-left: 950px;
+    margin-right: 200px;
+    margin-top: 70px;      
+    margin-bottom: 90px;         
+}
+
+a:hover {
+    background-color: rgb(65, 65, 65);
+    border: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+}
+
+section > p {
+    font-size: 70%;
+    font-style: normal;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 600px;
+}
+
+span {
+    margin-left: 240px;
+}
+
+footer{
+    float: left;
+}

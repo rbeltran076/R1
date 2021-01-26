@@ -1,0 +1,129 @@
+1) Browser-Sync >> browser-sync start --server --directory --files "*"
+-- Me tengo que colocar en la carpeta que quiero sincronizar, luego
+escribir eso, y al abrirse la página, tengo que presionar el archivo
+específico que quiero sincronizar.
+
+2) git add .
+-- (Creo que) Sirve para tomar una "foto" de mi código en el archivo
+en un momento exacto, para luego poder guardarlo en el historial
+con (3).
+
+3) git commit
+(Creo que) Sirve para guardar el archivo que agregué con (2) en un
+historial que aún no entiendo.
+
+4) git status
+(Creo que) Sirve para verificar si la "foto" que se tomó con (2) 
+está "al día" con el código del archivo. Se muestra un mensaje en
+rojo si no lo está, y uno en verde de ser el caso.
+
+5) <meta charset="UTF-8">
+Aún no lo entiendo bien.
+
+6) Las referencias a entidades (Entity references)
+Son comandos que se utilizan para "llamar" a caracteres o a objetos como:
+que por varios motivos tal vez no se puedan presentar en el viewport por
+confundirse con un comando de HTML, entonces se usan esas referencias para 
+tenerlos en la página web.
+
+7) Los caracteres en español sí están permitidos (al menos en lo que voy 
+trabajando).
+
+8) Los <div> pueden incluir otros <div>.
+
+9) Imágenes
+Siempre es buena practica incluir el tamaño de la imagen en el tag,
+de esa manera, la página sabrá de antemano el espacio que debe dejar para
+mejorar la experiencia del usuario, los detalles pequeños siempre importan ;).
+También.. No hay que poner Enter dentro de la dirección de imagen, porque
+la página no lo reconocerá.
+
+10) Secciones.
+Para cada seccion colocada luego de los links (<a href="#cualquier-dirección"></a>
+se colocan las secciones a las que se dirigiran los links, tienen que estar
+en la misma pagina, sobre todo si es larga, siempre se coloca <section id="cualquier-dirección">
+</section>, siendo "id" un atributo que permite identificar la seccionm, obviamente,
+cuantas veces se desee.
+
+11) Selectores 
+Los selectores siempre van en HEAD, no en BODY, además, se tiene 3 tipos de selección
+    a. selección por elemento (p, h1, h2, div), etc.
+    b. selección por id (#id), no es reutlizable, porque en HTML sólo puede
+    aparecer un atributo de "id" una sóla vez.
+    c. selección por clase (#clase), es la que me permite ser más versátil
+    y sencillamente ponerle el estilo de texto o diseño que yo quiera a 
+    cualquier elemento que pueda.
+
+12) Selectores de pseudo-clases
+:link               --> "a:link" se usa para indicar cómo mostrar un link sencillamente.
+:visited            --> "a:visited" se usa para indicar cómo mostrar un link ya visitado.
+:hover              --> "a:hover" se usa para indicar cómo mostar un link que tiene el cursor encima.
+:active             --> Similar al hover (Aún no especificado.)
+:nth-child()        --> "nth-child" especifica, para los hijos de un elemento, que hijo tendra esa
+propiedad, en orden de aparicion.
+
+Son los 5 selectores más usados en el desarrollo web. 
+Necesitamos este tipo de selectores porque especifican la situación de una entidad 
+para poder identificarla y decorarla como nosotros queramos.
+En resumidas cuentas, es más específico, y nos ayuda a decorar más cosas.
+El uso más popular para esto, al parecer es cuando se usa <a></a>. Porque gracias a 
+estos selectores, es posible especificar si aquel link ya se usó, aún no, o si se tiene
+el cursor sobre él para definir cómo se va a mostrar a la persona.
+
+13) Las reglas de importancia en los selectores son importantísimas.
+Existen 4 formas de saber qué regla es la que se presenta en la página web
+finalmente, puesto que podemos tener muchas declaraciones de selectores en
+nuestro código.
+    a. origin       --> La última declaración en la página web se presenta.
+    b. merge        --> No importa el origen de las declaraciones de CSS, mientras
+    no entren en conflicto, es decir, no se contradigan, las declaraciones se combinarán
+    siempre que lleguen a ser leídas por el buscador a la hora de cargar la página.  
+    c. inheritance  --> Esta regla dice que cuando se declara algo para un elemento padre,
+    se lo está declarando también para sus elementos hijos, de manera que, junto con origin,
+    le traería la importancia.
+    d. specificity  --> Specificity es una regla que se presenta en situaciones en las que
+    hemos declarado un estilo para un objeto, pero entra en conflicto con otras declaraciones, 
+    por lo que se necesita saber qué tan específico es una decl. para que tenga prioridad sobre las demás.
+    
+
+----------------------------------------------------------------------x
+----------------------------------------------------------------------x
+Algo interesante para web2.html:
+    
+    <script src="js/query-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <h1>Our Menu</h1>
+    <div class="container">
+        <p class="row">
+            <stan class="col-lg-4 col-md-4 col-sm-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                in culpa qui officia deserunt mollit anim id est laborum.
+            </stan>
+            <stan class="col-lg-4 col-md-4 col-sm-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                in culpa qui officia deserunt mollit anim id est laborum.
+            </stan>
+            <stan class="col-lg-4 col-md-4 col-sm-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                in culpa qui officia deserunt mollit anim id est laborum.
+            </stan>
+        </p>
+    </div>
+    ----------------------------------------------------------------------x
+    ----------------------------------------------------------------------x
